@@ -1,13 +1,8 @@
-html {
+body {
     background-color: black;
 }
 
-#title {
-    width: 90%;
-    border-radius: 100%;
-    background: rgba(255,255,255,.4);
-    display: inline-block;
+#nav, #footer {
+    background-color: inherit;
 }
-#title > h1 {
-    color: black;
-}
+
