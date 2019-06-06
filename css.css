@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    margin: unset !important;
 }
 
 #nav, #footer {
@@ -7,14 +8,22 @@ body {
 }
 
 #nav {
-    height: 20vh;
+    height: 10vh;
 
 }
 
 #mid {
-    height: 60vh;
+    height: 80vh;
 }
 
 #footer {
-    height: 20vh;
+    height: 10vh;
+}
+
+.plate {
+    margin: auto;
+    width: 90%;
+    border-radius: 3%;
+    background-color: rgba(255,255,255,.33);
+    display: inline-block;
 }
