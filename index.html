@@ -21,6 +21,36 @@
   <div id="footer">
 
   </div>
+  <script>
+
+
+// const bodyValue = body ? JSON.parse(body['application/json'].example) : undefined;
+//  document.addEventListener('DOMContentLoaded', () => {
+//    renderConsole({
+//      http_method: 'GET',
+//      endpoint_uri: 'https://api.spotify.com/v1/me',
+//      redirectUri: `https://accounts.spotify.com/authorize?response_type=token&redirect_uri=${encodeURIComponent(`${window.location.origin}/callback`)}&client_id=774b29d4f13844c495f206cafdad9c86`,
+//      queryParams: [],
+//      pathParams: [],
+//      bodyParams: body,
+//      bodyParamsValue: bodyValue,
+//      requiredScopes: (requiredScopes => requiredScopes === '' || requiredScopes === '[]' ? '' : requiredScopes)(["user-read-private","user-read-birthdate","user-read-email"]),
+//      scopes: ["user-read-private","user-read-birthdate","user-read-email","playlist-read-private","user-library-read","user-library-modify","user-top-read","playlist-read-collaborative","playlist-modify-public","playlist-modify-private","user-follow-read","user-follow-modify","user-read-playback-state","user-read-currently-playing","user-modify-playback-state","user-read-recently-played"]
+//    });
+//  });
+
+
+    var request = new XMLHttpRequest();
+    var data = JSON.parse(this.response);
+
+
+    console.log(request.open('GET','https://api.spotify.com/v1/me',true));
+    
+    request.onload = function(){
+
+    };
+    request.send();
+  </script>
 </body>
 
 </html>
