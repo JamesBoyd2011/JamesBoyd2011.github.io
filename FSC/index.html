@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Boyd Playground</title>
+</head>
+
+<body>
+  <div id="nav">
+    <div class="plate">
+      <h1 id="title">James Boyd's Playground</h1>
+    </div>
+  </div>
+  <div id="mid">
+    
+  </div>
+  <div id="footer">
+
+  </div>
+  <script>
+
+
+// const bodyValue = body ? JSON.parse(body['application/json'].example) : undefined;
+//  document.addEventListener('DOMContentLoaded', () => {
+//    renderConsole({
+//      http_method: 'GET',
+//      endpoint_uri: 'https://api.spotify.com/v1/me',
+//      redirectUri: `https://accounts.spotify.com/authorize?response_type=token&redirect_uri=${encodeURIComponent(`${window.location.origin}/callback`)}&client_id=774b29d4f13844c495f206cafdad9c86`,
+//      queryParams: [],
+//      pathParams: [],
+//      bodyParams: body,
+//      bodyParamsValue: bodyValue,
+//      requiredScopes: (requiredScopes => requiredScopes === '' || requiredScopes === '[]' ? '' : requiredScopes)(["user-read-private","user-read-birthdate","user-read-email"]),
+//      scopes: ["user-read-private","user-read-birthdate","user-read-email","playlist-read-private","user-library-read","user-library-modify","user-top-read","playlist-read-collaborative","playlist-modify-public","playlist-modify-private","user-follow-read","user-follow-modify","user-read-playback-state","user-read-currently-playing","user-modify-playback-state","user-read-recently-played"]
+//    });
+//  });
+
+
+    var request = new Request('https://api.spotify.com/v1/me', {
+      method: 'GET',
+      headers: new Headers({
+        'Content-Type':'text/plain',
+        'Authorization':'Bearer BQA1uKJ16MpoeEl5j2E0TCL4FS2SK2HkCNlJUdBewkKB2_cbTqcRXo_3bYIGfkiCOrvikFaH3VjUx9TJXMlKlrxiPfrCxlAYyaEaehGgiz7Udf3Qed70cwDsgzMgkRi0W1KZxK3FX-ESnLu6iMxTxJoRY8CCYw2C6XVfCoFk0ubtUHJ04jgJID3tK0WnINVxDC488Fhmp3t-9SiX0gpr-7Wwgboy6N13CDJGkLC27CfZKYXw2yBhD954uAw-pUQvkegt5qd-LQh1agY--fDfUHs'
+      })
+    });
+
+    fetch(request).then(function(data){console.log(data).then(function(data){console.log(data)})});
+    //var data = JSON.parse(this.response);
+
+  </script>
+</body>
+
+</html>
