@@ -1,34 +1,47 @@
 body {
-    background-color: black;
-    margin: unset !important;
+    margin: unset;
+    width:100%;
 }
 
-#nav, #footer {
-    background-color: inherit;
+ul {
+    margin:unset;
+}
+.services {
+    width:100%;
 }
 
-#nav {
-    text-align: center;
-    height: 10vh;
-
+h2{
+    color: white;
+    margin: unset;
+    padding: 1%;
+    height: 2vh;
 }
 
-#mid {
-    height: 80vh;
+.networkWiring{
+background: blue;
 }
 
-#footer {
-    height: 10vh;
+.tvMounting{
+    background: gray; 
 }
 
-.plate {
-    margin: auto;
-    width: 90%;
-    border-radius: 3%;
-    background-color: rgba(255,255,255,.33);
-    display: inline-block;
+.tdWiring{
+    background:orange;
 }
 
-#title {
-    color: #ccc;
+.collapse{
+    height:0px !important;
+    overflow:hidden;
+    display:none;
+    padding-top:unset !important;
+}
+.details{
+    display:block;
+    color:black;
+    background: white;
+    padding-left:1.5%;
+    transition:1s;
+    height:81.47vh;
+    overflow:hidden;
+    padding-top: 1vh;
 }
