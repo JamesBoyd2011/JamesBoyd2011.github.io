@@ -1,33 +1,42 @@
+html{
+    background:black;
+}
 body {
     margin: unset;
-    width:100%;
+    width:100vh;
 }
 
 ul {
     margin:unset;
 }
 .services {
-    width:100%;
+    width:100vw;
+    text-align: center;
 }
 
 h2{
     color: white;
     margin: unset;
-    padding: 1%;
-    height: 2vh;
+    padding-top: calc(0.01*100vh);
+    padding-bottom: calc(0.01*100vh);
+    padding-left: calc(0.01*100vw);
+    padding-right: calc(0.01*100vw);
+    height: calc(0.02*100vh);
 }
 
 .networkWiring{
-background: blue;
-}
-
-.tvMounting{
-    background: gray; 
+background: #0078b9;
 }
 
 .tdWiring{
-    background:orange;
+    background:#005c8e;
 }
+
+
+.tvMounting{
+    background: #004c75; 
+}
+
 
 .collapse{
     height:0px !important;
@@ -37,11 +46,19 @@ background: blue;
 }
 .details{
     display:block;
-    color:black;
-    background: white;
-    padding-left:1.5%;
+    color:white;
+    background: inherit;
+    padding-left:calc(0.02*100vw);
     transition:1s;
-    height:81.47vh;
+    height:calc(0.79*100vh);
     overflow:hidden;
-    padding-top: 1vh;
+    padding-top: calc(0.01*100vh);
+}
+
+#home{
+    background: #008bd6;
+}
+
+.contact{
+    background: #002f48
 }
