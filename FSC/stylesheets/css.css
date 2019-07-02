@@ -1,9 +1,13 @@
 html{
     background:black;
+    overflow:hidden;
+    width:100%;
+    height:100%;
 }
 body {
     margin: unset;
-    width:100vh;
+    width:100%;
+    height:100%;
 }
 
 ul {
